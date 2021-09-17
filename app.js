@@ -13,11 +13,20 @@ function calculateSumOfAngles( angle1 , angle2 ,angle3){
 }
 
 function isTriangle(){
-  var sum = calculateSumOfAngles(Number(angle1.value) ,Number(angle2.value) ,Number(angle3.value)  );
+    if(Number(angle1.value) >0&Number(angle2.value)>0&Number(angle3.value)>0 ){
+        var sum = calculateSumOfAngles(Number(angle1.value) ,Number(angle2.value) ,Number(angle3.value)  );
   if (sum === 180){
       outputTri.innerText = "Yes It is a Triangle 😃";
   }else{
       outputTri.innerText = "No It's Not A Triangle 😞";
   }
+
+    }
+//   var sum = calculateSumOfAngles(Number(angle1.value) ,Number(angle2.value) ,Number(angle3.value)  );
+//   if (sum === 180){
+//       outputTri.innerText = "Yes It is a Triangle 😃";
+//   }else{
+//       outputTri.innerText = "No It's Not A Triangle 😞";
+//   }
 
 }
