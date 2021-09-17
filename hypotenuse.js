@@ -6,8 +6,12 @@ const outputEl = document.querySelector(".output");
 calculateHypotenuseBtn.addEventListener("click" , calchypo);
 
 function calchypo(){
-    var squareSum = ((Number(length1.value))*(Number(length1.value))) +((Number(length2.value))*(Number(length2.value)));
+    if((Number(length1.value))>0 & (Number(length2.value))>0){
+        var squareSum = ((Number(length1.value))*(Number(length1.value))) +((Number(length2.value))*(Number(length2.value)));
     var hypotenuse = Math.sqrt(squareSum);
     
-    outputEl.innerText = hypotenuse;
+    outputEl.innerText = "Lenght Of Hypotenuse : " + hypotenuse ;
+
+    }
+    
 }

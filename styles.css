@@ -1,5 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap');
+:root{
+    --medium-color :#345B63;
+    --dark-color :#152D35;
+    --light-color : #D4ECDD;
+}
 .quiz-container{
     display: flex;
     flex-direction: column;
     width: 50vw;
+}
+body{
+    margin: 0px;
+    font-family: 'Lato', sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--medium-color);
+    padding: 2rem;
+}
+.footer-div{
+    text-align: center;
+    background-color: var(--dark-color);
+    padding: 2rem;
+    color: white;
+}
+#output{
+    padding: 2rem;
+}
+#calculate-hypotenuse{
+    margin: 2rem 2rem 2rem 2rem;
+    padding: 1rem 2rem;
+    font-size: medium;
+    border: none;
+    border-radius: 1.2rem;
+    background-color: var(--dark-color);
+    color: white;
+}
+.quiz-container{
+    margin-top: 7rem;
+}
+.main-div{
+    text-align: center;
+    margin: auto;
+}
+p{
+    margin-top: 2rem;
+}
+a{
+    /* margin: 2rem; */
+    padding: 2rem;
+    font-size: large;
+    color: var(--light-color);
+    
+}
+label{
+    margin: 2rem;
+    
+}
+.isTriangle{
+    margin: 2rem;
+}
+#is-triangle-btn{
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 1.2rem;
+    color: white;
+    background-color: var(--dark-color);
+}
+.output{
+    text-align: center;
+    margin: 2rem;
+}
+#submit-answer-btn{
+    border: none;
+    color: white;
+    background-color: var(--dark-color);
+    border-radius: 1.2rem;
+    padding: 1rem 2rem;
+}
+.area-main{
+    text-align: center;
+}
+#calc-area-btn{
+    margin: 2rem;
+    padding: 1rem 2rem;
+    border: none;
+    color: white;
+    border-radius: 1.2rem;
+    background-color: var(--dark-color);
 }
