@@ -10,8 +10,10 @@ function calchypo(){
         var squareSum = ((Number(length1.value))*(Number(length1.value))) +((Number(length2.value))*(Number(length2.value)));
     var hypotenuse = Math.sqrt(squareSum);
     
-    outputEl.innerText = "Lenght Of Hypotenuse : " + hypotenuse ;
+    outputEl.innerText = "Lenght Of Hypotenuse : " + hypotenuse + "cm2";
 
+    }else{
+        outputEl.innerText = "Please enter positive values";
     }
     
 }
