@@ -8,8 +8,13 @@ const outputTri = document.querySelector("#output");
 calAreaBtn.addEventListener("click", calculateArea);
 
 function calculateArea(){
-  var area = 0.5*(baseOfTri.value)*(heigthOfTri.value);
+  if(Number(baseOfTri.value)> 0 & Number(baseOfTri.value)> 0){
+    var area = 0.5*(Number(baseOfTri.value))*Number((heigthOfTri.value));
   outputTri.innerText = "area to triangle is : " + area + " cm2";
+  }else{
+    outputTri.innerText = "please enter positive value";
+  }
+  
 
 }
 

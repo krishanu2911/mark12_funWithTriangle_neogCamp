@@ -22,6 +22,9 @@ function isTriangle(){
   }
 
     }
+    else{
+        outputTri.innerText = "please enter positive number";
+    }
 //   var sum = calculateSumOfAngles(Number(angle1.value) ,Number(angle2.value) ,Number(angle3.value)  );
 //   if (sum === 180){
 //       outputTri.innerText = "Yes It is a Triangle 😃";
